@@ -231,13 +231,7 @@ Invalid transition example (`submitted` → `selected` directly):
 =======
 # Selection, Merit & Analytics Module — Vidyarth
 
-## 👩‍💻 My Contribution
 
-I worked on the **Selection, Merit & Analytics** module of **Vidyarth – AI-Enabled Scholarship and Fellowship Management System**.
-
-My module is responsible for converting eligible applications into a **transparent merit-based ranking**, generating **seat-based recommendations**, supporting **human-admin selection decisions**, maintaining an **audit trail**, and providing **analytics** for administrators.
-
----
 
 ## 🎯 Module Objective
 
@@ -253,7 +247,7 @@ The system provides an automated recommendation, while the **final selection dec
 
 ---
 
-## 🔄 My Module Workflow
+## 🔄  Module Workflow
 
 ```text
 Eligible Applications
