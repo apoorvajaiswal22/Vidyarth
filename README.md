@@ -1,3 +1,4 @@
+
 # PS 26239 — Backend & Rules Engine
 AI-powered Scholarship/Fellowship Assistance Platform for ST Students (Ministry of Tribal Affairs)
 
@@ -227,3 +228,47 @@ Invalid transition example (`submitted` → `selected` directly):
 - ✅ CORS enabled (configurable origin)
 - ✅ `.env` for all secrets/config, `.env.example` committed instead
 - ✅ Ownership checks (students can only view/modify their own applications)
+=======
+# Selection, Merit & Analytics Module — Vidyarth
+
+## 👩‍💻 My Contribution
+
+I worked on the **Selection, Merit & Analytics** module of **Vidyarth – AI-Enabled Scholarship and Fellowship Management System**.
+
+My module is responsible for converting eligible applications into a **transparent merit-based ranking**, generating **seat-based recommendations**, supporting **human-admin selection decisions**, maintaining an **audit trail**, and providing **analytics** for administrators.
+
+---
+
+## 🎯 Module Objective
+
+The objective of this module is to make scholarship/fellowship selection:
+
+- Merit-based
+- Transparent
+- Configurable
+- Auditable
+- Human-supervised
+
+The system provides an automated recommendation, while the **final selection decision remains with the administrator**.
+
+---
+
+## 🔄 My Module Workflow
+
+```text
+Eligible Applications
+        ↓
+Merit Score Calculation
+        ↓
+Merit Ranking
+        ↓
+Seat-Based Recommendation
+        ↓
+Admin Review
+        ↓
+Final Selection Decision
+        ↓
+Selection Audit Trail
+        ↓
+Analytics
+981d079 (Add Vidyarth selection merit and analytics module)
