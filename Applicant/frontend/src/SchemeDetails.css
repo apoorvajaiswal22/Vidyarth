@@ -1,0 +1,601 @@
+.scheme-details-page {
+    min-height: 100vh;
+    background: #f5f8fa;
+    color: #263746;
+}
+
+/* =========================
+   COMMON
+========================= */
+
+.details-container {
+    width: min(1180px, 92%);
+    margin: 0 auto;
+}
+
+/* =========================
+   GOVERNMENT BAR
+========================= */
+
+.gov-bar {
+    background: #071b33;
+    color: #ffffff;
+    font-size: 13px;
+}
+
+.gov-inner {
+    min-height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.language-switch {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.language-switch button {
+    background: transparent;
+    border: none;
+    color: #dce5ec;
+    cursor: pointer;
+    font-size: 13px;
+    padding: 5px 2px;
+}
+
+.language-switch button.active {
+    color: #ffffff;
+    font-weight: 700;
+    border-bottom: 2px solid #d4a72c;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.details-header {
+    background: #ffffff;
+    border-bottom: 1px solid #dbe3e8;
+}
+
+.header-inner {
+    min-height: 82px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.details-logo {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    text-decoration: none;
+    color: #071b33;
+}
+
+.logo-mark {
+    width: 43px;
+    height: 43px;
+    border-radius: 7px;
+    background: #0b2545;
+    border-bottom: 4px solid #d4a72c;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.details-logo h1 {
+    margin: 0;
+    font-size: 21px;
+    letter-spacing: 1px;
+}
+
+.details-logo p {
+    margin: 3px 0 0;
+    color: #667580;
+    font-size: 12px;
+}
+
+/* =========================
+   BREADCRUMB
+========================= */
+
+.breadcrumb {
+    padding: 22px 0 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    font-size: 13px;
+    color: #667580;
+}
+
+.breadcrumb a {
+    color: #087e8b;
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.scheme-detail-hero {
+    background: #0b2545;
+    border-radius: 10px;
+    padding: 42px 46px;
+    color: #ffffff;
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 30px;
+}
+
+.scheme-detail-hero::after {
+    content: "V";
+    position: absolute;
+    right: 45px;
+    bottom: -45px;
+    font-size: 190px;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0.035);
+    pointer-events: none;
+}
+
+.scheme-detail-hero-left {
+    position: relative;
+    z-index: 1;
+}
+
+.scheme-type {
+    display: inline-block;
+    color: #d4a72c;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.scheme-detail-hero h1 {
+    max-width: 760px;
+    margin: 10px 0 13px;
+    font-size: 38px;
+    line-height: 1.15;
+}
+
+.scheme-detail-hero p {
+    max-width: 780px;
+    margin: 0;
+    color: #d5e0e8;
+    line-height: 1.7;
+    font-size: 15px;
+}
+
+.scheme-detail-hero-right {
+    position: relative;
+    z-index: 2;
+    flex-shrink: 0;
+}
+
+.apply-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 19px;
+    border-radius: 5px;
+    background: #d4a72c;
+    color: #071b33;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.apply-button:hover {
+    background: #ffffff;
+}
+
+/* =========================
+   MAIN LAYOUT
+========================= */
+
+.details-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 290px;
+    gap: 28px;
+    padding: 32px 0 55px;
+}
+
+.details-main {
+    min-width: 0;
+}
+
+/* =========================
+   DETAIL SECTIONS
+========================= */
+
+.detail-section {
+    background: #ffffff;
+    border: 1px solid #dbe3e8;
+    border-radius: 8px;
+    padding: 26px 29px;
+    margin-bottom: 17px;
+}
+
+.detail-section h2 {
+    margin: 0 0 18px;
+    color: #071b33;
+    font-size: 20px;
+    line-height: 1.3;
+}
+
+.detail-content {
+    color: #52636e;
+}
+
+.detail-content p {
+    margin: 0;
+    color: #52636e;
+    line-height: 1.75;
+    font-size: 14px;
+}
+
+/* =========================
+   LISTS
+========================= */
+
+.detail-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.detail-list li {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    padding: 10px 0;
+    border-bottom: 1px solid #edf1f3;
+    color: #52636e;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.detail-list li:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.detail-list li:first-child {
+    padding-top: 0;
+}
+
+.list-icon {
+    width: 22px;
+    height: 22px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: #e8f5f6;
+    color: #087e8b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+/* =========================
+   IMPORTANT INFORMATION
+========================= */
+
+.important-box {
+    display: flex;
+    gap: 15px;
+    background: #fff8e7;
+    border: 1px solid #ead9a7;
+    border-radius: 8px;
+    padding: 21px 23px;
+    margin-top: 5px;
+}
+
+.important-icon {
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+    background: #d4a72c;
+    color: #071b33;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+}
+
+.important-box h2 {
+    margin: 2px 0 7px;
+    color: #071b33;
+    font-size: 16px;
+}
+
+.important-box p {
+    margin: 0;
+    color: #5e5b50;
+    font-size: 13px;
+    line-height: 1.65;
+}
+
+/* =========================
+   SIDEBAR
+========================= */
+
+.details-sidebar {
+    min-width: 0;
+}
+
+.sidebar-card {
+    background: #ffffff;
+    border: 1px solid #dbe3e8;
+    border-radius: 8px;
+    padding: 22px;
+    margin-bottom: 15px;
+}
+
+.sidebar-card h3 {
+    margin: 0;
+    color: #087e8b;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.3px;
+    text-transform: uppercase;
+}
+
+.sidebar-item {
+    padding: 13px 0;
+    border-bottom: 1px solid #edf1f3;
+}
+
+.sidebar-item span {
+    display: block;
+    color: #7a8891;
+    font-size: 11px;
+    margin-bottom: 4px;
+}
+
+.sidebar-item strong {
+    color: #263746;
+    font-size: 13px;
+}
+
+.sidebar-apply {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    padding: 12px;
+    background: #087e8b;
+    color: #ffffff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.sidebar-apply:hover {
+    background: #071b33;
+}
+
+/* =========================
+   HELP CARD
+========================= */
+
+.help-card {
+    background: #e8f5f6;
+    border-color: #c9e5e8;
+}
+
+.help-card h3 {
+    color: #071b33;
+    font-size: 14px;
+    letter-spacing: 0;
+    text-transform: none;
+    margin-bottom: 9px;
+}
+
+.help-card p {
+    color: #52636e;
+    font-size: 12px;
+    line-height: 1.6;
+    margin: 0 0 10px;
+}
+
+.help-card a {
+    color: #087e8b;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+/* =========================
+   BACK BUTTON
+========================= */
+
+.back-section {
+    padding-bottom: 45px;
+}
+
+.back-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 10px 15px;
+    border: 1px solid #dbe3e8;
+    border-radius: 5px;
+    background: #ffffff;
+    color: #087e8b;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.back-button:hover {
+    background: #e8f5f6;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.details-footer {
+    background: #071b33;
+    color: #ffffff;
+    padding: 28px 0;
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.footer-inner strong {
+    display: block;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.footer-inner p {
+    margin: 5px 0 0;
+    color: #b8c5ce;
+    font-size: 13px;
+}
+
+.footer-inner>div:last-child {
+    text-align: right;
+}
+
+.footer-inner>div:last-child p {
+    color: #8fa1ae;
+}
+
+/* =========================
+   NOT FOUND
+========================= */
+
+.scheme-not-found {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    padding: 30px;
+    background: #f5f8fa;
+    color: #263746;
+}
+
+.scheme-not-found h1 {
+    color: #071b33;
+    margin-bottom: 10px;
+}
+
+.scheme-not-found p {
+    color: #667580;
+    margin-bottom: 15px;
+}
+
+.scheme-not-found a {
+    color: #087e8b;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+    .scheme-detail-hero {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .scheme-detail-hero-right {
+        margin-top: 5px;
+    }
+
+    .details-layout {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .gov-inner,
+    .header-inner {
+        padding: 12px 0;
+    }
+
+    .language-switch {
+        margin-left: auto;
+    }
+
+    .scheme-detail-hero {
+        padding: 30px 25px;
+    }
+
+    .scheme-detail-hero h1 {
+        font-size: 29px;
+    }
+
+    .details-layout {
+        padding-top: 25px;
+    }
+
+    .sidebar-card {
+        margin-bottom: 15px;
+    }
+
+    .footer-inner {
+        flex-direction: column;
+    }
+
+    .footer-inner>div:last-child {
+        text-align: left;
+    }
+}
+
+@media (max-width: 500px) {
+    .details-container {
+        width: 90%;
+    }
+
+    .scheme-detail-hero {
+        padding: 25px 20px;
+    }
+
+    .scheme-detail-hero h1 {
+        font-size: 25px;
+    }
+
+    .scheme-detail-hero p {
+        font-size: 14px;
+    }
+
+    .detail-section {
+        padding: 21px;
+    }
+
+    .important-box {
+        padding: 17px;
+    }
+
+    .breadcrumb {
+        font-size: 12px;
+    }
+}

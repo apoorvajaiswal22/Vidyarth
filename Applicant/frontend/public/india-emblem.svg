@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 64" fill="none">
+  <g stroke="#263746" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M11 19 8 13l5 2 2-5 4 5 5-6 5 6 4-5 2 5 5-2-3 6" fill="#263746" stroke-width="1.5"/>
+    <path d="M10 20h28v4H10z" fill="#263746" stroke-width="1.5"/>
+    <path d="M13 25v11m6-11v12m10-12v12m6-12v11" stroke-width="3"/>
+    <path d="M9 37h30l-3 5H12l-3-5Zm-3 7h36v4H6z" fill="#263746" stroke-width="1.5"/>
+    <circle cx="24" cy="20" r="3" fill="#fff" stroke-width="1.4"/>
+    <path d="M24 17v6m-3-3h6m-5.1-2.1 4.2 4.2m0-4.2-4.2 4.2" stroke-width=".8"/>
+    <path d="M14 51h20l-2 3H16l-2-3Zm-3 5h26" stroke-width="1.5"/>
+  </g>
+  <text x="24" y="62" text-anchor="middle" fill="#263746" font-family="serif" font-size="5.6">सत्यमेव जयते</text>
+</svg>
