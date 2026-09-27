@@ -1,0 +1,371 @@
+.notices-page {
+    min-height: 100vh;
+    background: #f5f8fa;
+    color: #263746;
+}
+
+.notices-container {
+    width: min(1180px, 92%);
+    margin: 0 auto;
+}
+
+.notices-govbar {
+    background: #071b33;
+    color: #ffffff;
+    font-size: 13px;
+}
+
+.govbar-inner {
+    min-height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.govbar-inner b {
+    color: #8fa1ae;
+    margin: 0 6px;
+}
+
+.notice-language {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.notice-language button {
+    border: none;
+    background: transparent;
+    color: #c8d3db;
+    cursor: pointer;
+    font-size: 13px;
+    padding: 5px 2px;
+}
+
+.notice-language button.active {
+    color: #ffffff;
+    font-weight: 700;
+    border-bottom: 2px solid #d4a72c;
+}
+
+.notices-header {
+    background: #ffffff;
+    border-bottom: 1px solid #dbe3e8;
+}
+
+.header-row {
+    min-height: 82px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.notices-brand {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    text-decoration: none;
+    color: #071b33;
+}
+
+.notices-logo {
+    width: 43px;
+    height: 43px;
+    background: #0b2545;
+    border-bottom: 4px solid #d4a72c;
+    border-radius: 7px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.notices-brand strong {
+    display: block;
+    font-size: 21px;
+    letter-spacing: 1px;
+}
+
+.notices-brand small {
+    display: block;
+    margin-top: 3px;
+    color: #667580;
+    font-size: 12px;
+}
+
+.notice-back {
+    color: #087e8b;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.notice-back:hover {
+    color: #071b33;
+}
+
+.notices-main {
+    padding-bottom: 55px;
+}
+
+.notice-breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 22px 0 15px;
+    font-size: 13px;
+    color: #667580;
+}
+
+.notice-breadcrumb a {
+    color: #087e8b;
+    text-decoration: none;
+}
+
+.notice-breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.notice-heading {
+    padding: 18px 0 30px;
+}
+
+.notice-heading>span {
+    color: #087e8b;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.notice-heading h1 {
+    margin: 9px 0 10px;
+    color: #071b33;
+    font-size: 34px;
+    line-height: 1.2;
+}
+
+.notice-heading p {
+    max-width: 720px;
+    margin: 0;
+    color: #667580;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.notice-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.notice-card {
+    display: grid;
+    grid-template-columns: 95px minmax(0, 1fr);
+    background: #ffffff;
+    border: 1px solid #dbe3e8;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.notice-card:hover {
+    border-color: #b9d8dc;
+}
+
+.latest-notice {
+    border-left: 4px solid #087e8b;
+}
+
+.notice-date {
+    background: #f8fafb;
+    border-right: 1px solid #e3e9ed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 10px;
+}
+
+.notice-date strong {
+    color: #071b33;
+    font-size: 30px;
+    line-height: 1;
+}
+
+.notice-date span {
+    margin-top: 6px;
+    color: #667580;
+    font-size: 10px;
+    font-weight: 800;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+.notice-info {
+    padding: 22px 25px;
+}
+
+.notice-topline {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin-bottom: 8px;
+}
+
+.notice-type {
+    color: #087e8b;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.1px;
+}
+
+.latest-badge {
+    background: #fff3cf;
+    color: #806000;
+    border-radius: 3px;
+    padding: 3px 7px;
+    font-size: 9px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.notice-info h2 {
+    margin: 0 0 8px;
+    color: #071b33;
+    font-size: 19px;
+    line-height: 1.35;
+}
+
+.notice-info p {
+    max-width: 850px;
+    margin: 0 0 14px;
+    color: #596a75;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.notice-read {
+    display: inline-flex;
+    color: #087e8b;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.notice-read:hover {
+    color: #071b33;
+}
+
+.notice-bottom-info {
+    display: flex;
+    gap: 14px;
+    margin-top: 24px;
+    padding: 19px 22px;
+    background: #e8f5f6;
+    border: 1px solid #c9e5e8;
+    border-radius: 8px;
+}
+
+.notice-bottom-info strong {
+    color: #071b33;
+    font-size: 13px;
+}
+
+.notice-bottom-info p {
+    margin: 0;
+    color: #52636e;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.notices-footer {
+    background: #071b33;
+    color: #aebdc7;
+    padding: 27px 0;
+    font-size: 12px;
+}
+
+@media (max-width: 700px) {
+    .govbar-inner {
+        padding: 10px 0;
+        gap: 10px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header-row {
+        min-height: 75px;
+    }
+
+    .notice-back {
+        font-size: 12px;
+    }
+
+    .notice-heading h1 {
+        font-size: 28px;
+    }
+
+    .notice-card {
+        grid-template-columns: 75px minmax(0, 1fr);
+    }
+
+    .notice-date strong {
+        font-size: 25px;
+    }
+
+    .notice-info {
+        padding: 18px;
+    }
+}
+
+@media (max-width: 500px) {
+    .notices-container {
+        width: 90%;
+    }
+
+    .notices-brand small {
+        display: none;
+    }
+
+    .notices-brand strong {
+        font-size: 18px;
+    }
+
+    .notices-logo {
+        width: 38px;
+        height: 38px;
+        font-size: 20px;
+    }
+
+    .notice-heading h1 {
+        font-size: 25px;
+    }
+
+    .notice-card {
+        grid-template-columns: 1fr;
+    }
+
+    .notice-date {
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 8px;
+        border-right: none;
+        border-bottom: 1px solid #e3e9ed;
+        padding: 12px 17px;
+    }
+
+    .notice-date strong {
+        font-size: 21px;
+    }
+
+    .notice-date span {
+        margin-top: 0;
+    }
+
+    .notice-bottom-info {
+        flex-direction: column;
+        gap: 5px;
+    }
+}

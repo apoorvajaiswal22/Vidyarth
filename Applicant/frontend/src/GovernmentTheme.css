@@ -1,0 +1,263 @@
+/* Shared government-portal branding for all VIDYARTH routes. */
+:root {
+  --navy: #123c68;
+  --navy-dark: #0755a2;
+  --teal: #0869c9;
+  --teal-dark: #064781;
+  --teal-light: #eaf3fb;
+  --gold: #f39a16;
+  --green: #138808;
+  --text: #263746;
+  --muted: #667580;
+  --border: #d6e0e8;
+}
+
+.about-topbar,
+.admin-login-topbar,
+.apply-topbar,
+.dashboard-topbar,
+.help-topbar,
+.login-topbar,
+.notices-topbar,
+.notifications-topbar,
+.register-topbar,
+.track-topbar,
+.schemes-govbar,
+.gov-bar {
+  background: #0869c9 !important;
+  color: #fff !important;
+}
+
+.about-header,
+.admin-login-header,
+.apply-header,
+.dashboard-header,
+.help-header,
+.login-header,
+.notice-details-header,
+.notices-header,
+.notifications-header,
+.register-header,
+.details-header,
+.schemes-header,
+.track-header {
+  background: #fff !important;
+  border-bottom: 1px solid #d6e0e8 !important;
+}
+
+.about-logo,
+.apply-logo,
+.help-logo,
+.notices-logo,
+.notifications-logo,
+.schemes-brand-mark,
+.track-logo {
+  width: 58px !important;
+  height: 48px !important;
+  display: block !important;
+  overflow: visible !important;
+  background: url("/vidyarth-logo.svg") center / contain no-repeat !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  color: transparent !important;
+  font-size: 0 !important;
+}
+
+.admin-login-brand img,
+.dashboard-logo,
+.login-logo,
+.register-logo,
+.details-logo-image {
+  width: 58px !important;
+  height: 48px !important;
+  flex: 0 0 58px;
+  object-fit: contain !important;
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+.about-brand-name,
+.admin-login-brand strong,
+.apply-brand-name,
+.dashboard-brand-name,
+.help-brand-name,
+.login-brand-name,
+.notices-brand-name,
+.notifications-brand-name,
+.register-brand-name,
+.details-brand-name,
+.schemes-brand-name,
+.track-brand-name {
+  color: #123c68 !important;
+  letter-spacing: 0 !important;
+}
+
+.about-brand-subtitle,
+.admin-login-brand small,
+.apply-brand-subtitle,
+.dashboard-brand-subtitle,
+.help-brand-subtitle,
+.login-brand-subtitle,
+.notices-brand-subtitle,
+.notifications-brand-subtitle,
+.register-brand-subtitle,
+.details-brand-subtitle,
+.schemes-brand-subtitle,
+.track-brand-subtitle {
+  color: #5c7086 !important;
+}
+
+.about-home-link,
+.apply-home-link,
+.dashboard-home-link,
+.help-home-link,
+.login-home-link,
+.back-home,
+.notices-home-link,
+.notifications-home-link,
+.register-home-link,
+.details-home-link,
+.schemes-home-link,
+.track-home-link {
+  color: #0755a2 !important;
+}
+
+.about-home-link:hover,
+.apply-home-link:hover,
+.dashboard-home-link:hover,
+.help-home-link:hover,
+.login-home-link:hover,
+.back-home:hover,
+.notices-home-link:hover,
+.notifications-home-link:hover,
+.register-home-link:hover,
+.details-home-link:hover,
+.schemes-home-link:hover,
+.track-home-link:hover {
+  color: #e87918 !important;
+}
+
+.about-page,
+.admin-login-page,
+.apply-page,
+.dashboard-page,
+.help-page,
+.login-page,
+.notice-details-page,
+.notices-page,
+.notifications-page,
+.register-page,
+.scheme-details-page,
+.schemes-page,
+.track-page {
+  --page-blue: #0755a2;
+  --page-gold: #e87918;
+  --page-line: #d6e0e8;
+}
+
+.about-breadcrumb a,
+.apply-breadcrumb a,
+.dashboard-breadcrumb a,
+.help-breadcrumb a,
+.login-breadcrumb a,
+.notice-details-breadcrumb a,
+.notices-breadcrumb a,
+.notifications-breadcrumb a,
+.register-breadcrumb a,
+.details-breadcrumb a,
+.schemes-breadcrumb a,
+.track-breadcrumb a {
+  color: #0755a2 !important;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+summary:focus-visible {
+  outline: 3px solid rgba(8, 105, 201, .38);
+  outline-offset: 2px;
+}
+
+.about-topbar .about-topbar-inner > span,
+.admin-login-topbar .admin-login-container > span,
+.apply-topbar .apply-topbar-inner > span,
+.dashboard-topbar .dashboard-container > span,
+.help-topbar .help-topbar-inner > span,
+.login-topbar .login-container > span,
+.notices-topbar .notices-container > span,
+.notifications-topbar .notifications-container > span,
+.register-topbar .register-topbar-inner > span,
+.track-topbar .track-topbar-inner > span,
+.schemes-gov-inner > span,
+.gov-inner > span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.about-topbar .about-topbar-inner > span::before,
+.admin-login-topbar .admin-login-container > span::before,
+.apply-topbar .apply-topbar-inner > span::before,
+.dashboard-topbar .dashboard-container > span::before,
+.help-topbar .help-topbar-inner > span::before,
+.login-topbar .login-container > span::before,
+.notices-topbar .notices-container > span::before,
+.notifications-topbar .notifications-container > span::before,
+.register-topbar .register-topbar-inner > span::before,
+.track-topbar .track-topbar-inner > span::before,
+.schemes-gov-inner > span::before,
+.gov-inner > span::before {
+  content: "";
+  display: block;
+  width: 25px;
+  height: 30px;
+  flex: 0 0 25px;
+  background: url("/mota-logo.jpg") left center / auto 29px no-repeat;
+}
+
+.about-primary-btn,
+.apply-primary-btn,
+.dashboard-primary-btn,
+.login-button,
+.register-submit-btn,
+.track-primary-btn,
+.apply-button,
+.sidebar-apply {
+  background: #0755a2 !important;
+  border-color: #0755a2 !important;
+  color: #fff !important;
+}
+
+.about-primary-btn:hover,
+.apply-primary-btn:hover,
+.dashboard-primary-btn:hover,
+.login-button:hover,
+.register-submit-btn:hover,
+.track-primary-btn:hover,
+.apply-button:hover,
+.sidebar-apply:hover {
+  background: #064781 !important;
+  border-color: #064781 !important;
+}
+
+.scheme-details-btn,
+.notice-link,
+.text-link,
+.track-secondary-btn,
+.back-button {
+  color: #0755a2 !important;
+}
+
+.detail-section h2,
+.schemes-intro h1,
+.track-heading h1,
+.apply-heading h1,
+.about-title-section h1,
+.login-card-heading h1,
+.register-heading h1 {
+  color: #123c68 !important;
+}

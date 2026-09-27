@@ -1,0 +1,332 @@
+.schemes-page {
+    min-height: 100vh;
+    background: #f5f8fa;
+    color: #263746;
+}
+
+.schemes-container {
+    width: min(1180px, 92%);
+    margin: 0 auto;
+}
+
+.schemes-govbar {
+    background: #071b33;
+    color: #ffffff;
+    font-size: 13px;
+}
+
+.schemes-gov-inner {
+    min-height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.schemes-gov-inner b {
+    margin: 0 7px;
+    opacity: 0.5;
+}
+
+.schemes-language {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.schemes-language button {
+    border: none;
+    background: transparent;
+    color: #dce5ec;
+    cursor: pointer;
+    font-size: 13px;
+    padding: 4px 0;
+}
+
+.schemes-language button.active {
+    color: #ffffff;
+    font-weight: 700;
+    border-bottom: 2px solid #d4a72c;
+}
+
+.schemes-header {
+    background: #ffffff;
+    border-bottom: 1px solid #dbe3e8;
+}
+
+.schemes-header-inner {
+    min-height: 82px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.schemes-brand {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    text-decoration: none;
+    color: #071b33;
+}
+
+.schemes-brand-mark {
+    width: 43px;
+    height: 43px;
+    border-radius: 7px;
+    background: #0b2545;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 800;
+    border-bottom: 4px solid #d4a72c;
+}
+
+.schemes-brand-name {
+    font-size: 21px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.schemes-brand-subtitle {
+    margin-top: 3px;
+    color: #667580;
+    font-size: 12px;
+}
+
+.schemes-home-link {
+    text-decoration: none;
+    color: #087e8b;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.schemes-home-link:hover {
+    color: #071b33;
+}
+
+.schemes-breadcrumb {
+    padding: 24px 0 12px;
+    display: flex;
+    gap: 9px;
+    align-items: center;
+    font-size: 13px;
+    color: #667580;
+}
+
+.schemes-breadcrumb a {
+    color: #087e8b;
+    text-decoration: none;
+}
+
+.schemes-intro {
+    padding: 28px 0 32px;
+    max-width: 760px;
+}
+
+.schemes-tag {
+    color: #087e8b;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.schemes-intro h1 {
+    margin: 9px 0 10px;
+    color: #071b33;
+    font-size: 38px;
+    line-height: 1.15;
+}
+
+.schemes-intro p {
+    margin: 0;
+    color: #667580;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.scheme-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+    padding-bottom: 28px;
+}
+
+.scheme-list-card {
+    position: relative;
+    min-height: 265px;
+    background: #ffffff;
+    border: 1px solid #dbe3e8;
+    border-radius: 10px;
+    padding: 27px;
+    display: flex;
+    gap: 18px;
+    overflow: hidden;
+    transition: 0.2s ease;
+}
+
+.scheme-list-card::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 5px;
+    background: #087e8b;
+}
+
+.scheme-list-card:hover {
+    border-color: #087e8b;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 22px rgba(7, 27, 51, 0.08);
+}
+
+.scheme-card-number {
+    color: #d4a72c;
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.scheme-card-icon {
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #e8f5f6;
+    color: #087e8b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.scheme-card-content {
+    flex: 1;
+}
+
+.scheme-card-type {
+    color: #087e8b;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.3px;
+}
+
+.scheme-card-content h2 {
+    margin: 7px 0 9px;
+    color: #071b33;
+    font-size: 21px;
+}
+
+.scheme-card-content p {
+    margin: 0;
+    color: #667580;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+.scheme-details-btn {
+    display: inline-flex;
+    gap: 9px;
+    align-items: center;
+    margin-top: 19px;
+    text-decoration: none;
+    color: #087e8b;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.scheme-details-btn:hover {
+    color: #071b33;
+}
+
+.scheme-note {
+    margin: 8px 0 50px;
+    padding: 20px 22px;
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    background: #e8f5f6;
+    border: 1px solid #c8e5e8;
+    border-radius: 9px;
+}
+
+.scheme-note-icon {
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: #087e8b;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+}
+
+.scheme-note h3 {
+    margin: 1px 0 5px;
+    color: #071b33;
+    font-size: 16px;
+}
+
+.scheme-note p {
+    margin: 0;
+    color: #52636e;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.schemes-footer {
+    background: #071b33;
+    color: #ffffff;
+    padding: 28px 0;
+}
+
+.schemes-footer strong {
+    display: block;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.schemes-footer span {
+    display: block;
+    margin-top: 5px;
+    color: #b8c5ce;
+    font-size: 13px;
+}
+
+.schemes-footer p {
+    margin: 20px 0 0;
+    padding-top: 16px;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    color: #8fa1ae;
+    font-size: 12px;
+}
+
+@media (max-width: 750px) {
+
+    .schemes-gov-inner,
+    .schemes-header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 12px 0;
+    }
+
+    .schemes-language {
+        align-self: flex-end;
+    }
+
+    .schemes-intro h1 {
+        font-size: 30px;
+    }
+
+    .scheme-list {
+        grid-template-columns: 1fr;
+    }
+
+    .scheme-list-card {
+        min-height: auto;
+    }
+}
