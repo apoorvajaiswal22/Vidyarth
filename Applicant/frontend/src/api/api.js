@@ -77,7 +77,7 @@ export async function getSchemes() {
 }
 
 export async function checkEligibility(payload) {
-  return apiRequest("/eligibility/check", {
+  return apiRequest(`/schemes/${payload.scheme_id}/check-eligibility`, {
     method: "POST",
     body: JSON.stringify(payload),
   });

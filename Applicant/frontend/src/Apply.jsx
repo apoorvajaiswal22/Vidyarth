@@ -285,6 +285,7 @@ function Apply() {
     try {
       const response = await checkEligibility({
         ...formData,
+        scheme_id: 2,
         category: "ST",
         income: Number(formData.income),
         annualIncome: Number(formData.income),
@@ -389,7 +390,7 @@ function Apply() {
       } = formData;
       if (!applicationId) {
         const result = await createApplication({
-          ...applicationPayload,
+          ...applicationPayload,scheme_id: 2,
           category: "ST",
           income: Number(applicationPayload.income),
           cgpa: Number(applicationPayload.cgpa),
